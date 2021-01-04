@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <link rel="stylesheet" href="src/sass/estilos.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Graphic Story</title>
 </head>
 <body>
@@ -18,14 +19,14 @@
                         </div>
                         <div class="header__left__link">
                             <ul>
-                                <li><a href="">Registrarse</a></li>
+                                <li><a href="" data-toggle="modal" data-target="#modal__registrar">Registrarse</a></li>
                                 <li><a href="#" class="login" data-toggle="modal" data-target="#modal__login">Login</a></li>
                             </ul>
                         </div>
                     </div>
                </div>
-               <div class="col-lg-4 d-flex align-items-center justify-content-center">
-                    <form>
+               <div class="col-lg-4">
+                    <form class="buscador">
                         <div class="col-auto">                                        
                             <div class="input-group mb-2">                                          
                                 <input type="text" class="form-control" placeholder="Buscar comics, animes, artistas, estudios">
@@ -42,7 +43,7 @@
                    <div class="header__right">
                         <div class="header__right__link">
                             <a href="" class="activo">home</a>
-                            <a href="">Explore</a>
+                            <a href="">Explora</a>
                             <a href="">Foro</a>
                             <a href="">Lista</a>
                         </div>                        
@@ -52,32 +53,79 @@
            </div>
        </div>
     </header>
+    <!-- menu responsive -->
+<div class="barra-hamburger">
+    <a href="javascript:void(0)"><img src="static/img/logo-blanco.svg" alt=""></a>
+    <path d="M20.9514 18.7835C23.0673 17.8916 24.7372 16.6775 25.9609 15.1408C27.1848 13.6045 27.7968 11.9314 27.7968 10.1214C27.7968 8.31145 27.1848 6.63842 25.9609 5.1018C24.7372 3.56538 23.0673 2.35117 20.9514 1.45904C18.8355 0.567043 16.5341 0.121216 14.0469 0.121216C11.5599 0.121216 9.25857 0.567317 7.14252 1.45931C5.02673 2.35131 3.35678 3.56552 2.133 5.102C0.908938 6.63842 0.296875 8.31138 0.296875 10.1214C0.296875 11.6708 0.759599 13.1298 1.68395 14.4967C2.60831 15.8639 3.87793 17.0165 5.4924 17.9538C5.36228 18.2666 5.22882 18.5527 5.09207 18.8135C4.95525 19.0738 4.79264 19.3243 4.60369 19.5654C4.41488 19.8065 4.26855 19.9952 4.16429 20.1314C4.0601 20.2681 3.89086 20.4604 3.65642 20.7076C3.42191 20.955 3.27209 21.1178 3.20717 21.1957C3.20717 21.1826 3.18097 21.2121 3.12898 21.2837C3.07678 21.3554 3.0475 21.3877 3.04093 21.3816C3.0345 21.3746 3.00837 21.4072 2.96288 21.4788C2.91732 21.5505 2.89447 21.5863 2.89447 21.5863L2.84555 21.6836C2.82613 21.7225 2.81299 21.7614 2.80656 21.8007C2.79999 21.8395 2.79671 21.8821 2.79671 21.9275C2.79671 21.973 2.80314 22.0151 2.81627 22.0544C2.84248 22.2234 2.91732 22.3599 3.04093 22.4646C3.16469 22.5686 3.29795 22.6205 3.4414 22.6205H3.50003C4.15095 22.5294 4.71095 22.4252 5.17963 22.3079C7.18486 21.787 8.99492 20.9536 10.6095 19.8079C11.7812 20.0162 12.9272 20.1204 14.0469 20.1204C16.5339 20.1212 18.8355 19.6755 20.9514 18.7835ZM10.0237 17.1529L9.16416 17.7581C8.79954 18.0053 8.39613 18.2596 7.95331 18.5202L8.63707 16.8793L6.74252 15.7856C5.49226 15.0566 4.52235 14.1972 3.83223 13.2075C3.14204 12.218 2.79712 11.1893 2.79712 10.1215C2.79712 8.79319 3.30841 7.54971 4.33046 6.39084C5.35237 5.23198 6.72939 4.31406 8.46118 3.63673C10.1928 2.95982 12.0549 2.62105 14.0471 2.62105C16.0392 2.62105 17.9014 2.95982 19.633 3.63673C21.3647 4.31399 22.7417 5.23198 23.7641 6.39084C24.7862 7.54964 25.2971 8.79313 25.2971 10.1215C25.2971 11.4496 24.7862 12.693 23.7641 13.8519C22.7417 15.0111 21.3647 15.9288 19.633 16.6058C17.9014 17.2829 16.0394 17.6214 14.0471 17.6214C13.0707 17.6214 12.0746 17.5301 11.0588 17.348L10.0237 17.1529Z" fill="#492396"/>
+    <path d="M33.9101 19.5055C34.8349 18.1444 35.2969 16.6833 35.2969 15.1206C35.2969 13.519 34.8086 12.0214 33.8324 10.6284C32.8557 9.23542 31.5274 8.07635 29.8478 7.15186C30.1471 8.12834 30.2968 9.11789 30.2968 10.1207C30.2968 11.8654 29.8612 13.519 28.9882 15.0817C28.1158 16.6439 26.8658 18.024 25.2382 19.2222C23.7277 20.3159 22.0089 21.1555 20.0817 21.7416C18.155 22.3274 16.1431 22.6206 14.0467 22.6206C13.6562 22.6206 13.0832 22.5948 12.3281 22.5428C14.9452 24.2612 18.0183 25.1208 21.5468 25.1208C22.6667 25.1208 23.8124 25.0164 24.9844 24.8081C26.5989 25.9543 28.409 26.7873 30.4141 27.3084C30.8829 27.4259 31.4428 27.5299 32.0939 27.6209C32.25 27.6343 32.3936 27.5884 32.5237 27.4844C32.6539 27.38 32.7386 27.2372 32.7775 27.0551C32.7714 26.9769 32.7775 26.934 32.7971 26.9278C32.8163 26.9216 32.8131 26.8791 32.7873 26.8011C32.7615 26.7228 32.7484 26.6838 32.7484 26.6838L32.6997 26.5863C32.6862 26.5606 32.6641 26.5246 32.6314 26.4792C32.5988 26.434 32.5729 26.4012 32.5532 26.3815C32.534 26.3621 32.5049 26.3293 32.4656 26.2841C32.4267 26.239 32.4005 26.2094 32.3874 26.1963C32.3224 26.1182 32.1727 25.9555 31.9384 25.708C31.7038 25.4608 31.5348 25.2688 31.4306 25.1321C31.3264 24.9953 31.1799 24.8067 30.9912 24.5655C30.8025 24.3249 30.6395 24.0741 30.5028 23.8136C30.3661 23.5533 30.2326 23.2667 30.1024 22.9544C31.7165 22.0161 32.9863 20.8671 33.9101 19.5055Z" fill="#492396"/>
+    </svg></a>
+  </div>
+  <div class="content content--demo-3">
+      <div class="hamburger hamburger--demo-3 js-hover" id="hamburger">
+          <div class="hamburger__line hamburger__line--01">
+              <div class="hamburger__line-in hamburger__line-in--01"></div>
+          </div>
+          <div class="hamburger__line hamburger__line--02">
+              <div class="hamburger__line-in hamburger__line-in--02"></div>
+          </div>
+          <div class="hamburger__line hamburger__line--03">
+              <div class="hamburger__line-in hamburger__line-in--03"></div>
+          </div>
+          <div class="hamburger__line hamburger__line--cross01">
+              <div class="hamburger__line-in hamburger__line-in--cross01"></div>
+          </div>
+          <div class="hamburger__line hamburger__line--cross02">
+              <div class="hamburger__line-in hamburger__line-in--cross02"></div>
+          </div>
+      </div>
+      <div class="global-menu">
+            <div class="global-menu__wrap">
+              <a class="global-menu__item global-menu__item--demo-3" sectionB="inicio" href="javascript:void(0)">Home</a>
+              <a class="global-menu__item global-menu__item--demo-3" sectionB="descripcion" href="javascript:void(0)">Explora</a>
+              <a class="global-menu__item global-menu__item--demo-3" sectionB="caracteristicas" href="javascript:void(0)">Foro </a>
+              <a class="global-menu__item global-menu__item--demo-3" sectionB="galeria" href="javascript:void(0)">Lista</a>          </div>
+            </div>
+      <svg class="shape-overlays" viewBox="0 0 100 100" preserveAspectRatio="none">
+          <path class="shape-overlays__path"></path>
+          <path class="shape-overlays__path"></path>
+          <path class="shape-overlays__path"></path>
+      </svg>
+  </div>
+
     <section class="banner">
-        <div class="banner__content">
-            <div>
-                <div class="banner__content__descrip">
-                    <div class="texto row">
-                        <div class="col-lg-8 p-0">
-                            <h2>te damos <br> <span>la bienvenida</span> <br> a la versión beta de </h2>
-                        </div>
-                        <div class="col-lg-4">
-                            <div class="texto__logo">
-                                <img src="static/img/logo-blanco.svg" alt="">
+      <div class="container">
+          <div class="row">
+           <div class="col-lg-12">
+            <div class="banner__content">
+                <div class="banner__content__center">
+                    <div>
+                        <div class="banner__content__center__descrip">
+                            <div class="texto row">
+                                <div class="col-lg-8 p-0">
+                                    <h2>te damos <br> <span>la bienvenida</span> <br> a la versión beta de </h2>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="texto__logo">
+                                        <img src="static/img/logo-blanco.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-lg-12">
+                                    <p>Es muy sencillo,solo registrate y podras comenzar a disfrutar de la experiencia de pertenecer a la comunidad mas grande del mundo de los comics.</p>
+                                    <div class="texto__login">
+                                        <a href="">Registrarse</a>
+                                        <a href="">Login</a>
+                                    </div>
+                                    <p>Graphic Story te conecta con amigos y colegas amantes de las historietas graficas, de todo el mundo de una manera facil, divertida y ademas gratuita</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="col-lg-12">
-                            <p>Es muy sencillo,solo registrate y podras comenzar a disfrutar de la experiencia de pertenecer a la comunidad mas grande del mundo de los comics.</p>
-                            <div class="texto__login">
-                                <a href="">Registrarse</a>
-                                <a href="">Login</a>
-                            </div>
-                            <p>Graphic Story te conecta con amigos y colegas amantes de las historietas graficas, de todo el mundo de una manera facil, divertida y ademas gratuita</p>
-                        </div>
+                        <a href="" class="banner__content__center__face">Visitanos tambien en <img src="static/img/iconos/facebook.svg" alt=""></a>
                     </div>
                 </div>
-                <a href="" class="banner__content__face">Visitanos tambien en <img src="static/img/iconos/facebook.svg" alt=""></a>
             </div>
-        </div>
+           </div>
+          </div>
+      </div>
     </section>
     <section class="nuevo rayaP">
         <div class="container">
@@ -86,7 +134,7 @@
                     <div class="nuevo__top">
                         <h2 class="titulo titulo--mediano">Lo más nuevo</h2>
                         <div class="raya"></div>    
-                        <a href="" class="boton">Ver todos</a>                
+                        <a href="" class="boton" data-aos="fade-up">Ver todos</a>                
                         <p class="parrafo">Conoce cada uno de nuestros comics e interactua con sus seguidores</p>
                     </div>
                 </div>
@@ -230,7 +278,16 @@
             </div>
         </div>
     </section>
-    <footer class="footer ">
+    <section class="rayaP sigue">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <img src="static/img/sigue.svg" class="img-fluid" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
         <div class="footer__top">
             <div class="container">
                 <div class="row">
@@ -272,7 +329,7 @@
                             </div>
                             <div class="suscribete">
                                 <form>
-                                    <div class="col-auto">                                        
+                                    <div class="">                                        
                                         <div class="input-group mb-2">                                          
                                           <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Suscribete">
                                           <div class="input-group-prepend">
@@ -296,24 +353,120 @@
     <!-- Modal login -->
     <div class="modal modal__login fade" id="modal__login" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
         <div class="modal-dialog  modal-dialog-centered">
-          <div class="modal-content">            
-            <div class="modal-body modal__login__body text-center">
-                <h3 class="titulo">inicia sesión para ver más</h3>
+          <div class="modal-content  modal__login__content">            
+            <div class="modal-body modal__login__body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="static/img/iconos/close.svg" alt="">
+                  </button>                
                 <form>
+                    <h3 class="titulo text-center">inicia sesión para ver más</h3>
                     <div class="form-group">                      
                       <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Correo">                      
                     </div>
                     <div class="form-group">                      
                       <input type="password" class="form-control" placeholder="contraseña">
-                    </div>                    
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>  
+                    <div class="form-group">
+                      <div class="check">
+                        <input type="checkbox" name="category" id="c_1" class="css-checkbox" />
+                        <label for="c_1" class="css-label">¿Mantener siempre la sesión iniciada?</label>
+                      </div>                        
+                    </div>                  
+                    <button type="submit" class="btn btn--color">Iniciar Sesión</button>
+                    <div class="row mt-3 links">
+                        <div class="col-lg-6 p-0">
+                            <a href="">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="col-lg-6 p-0">
+                            <a href="">¿Aún no estás? Regístrate</a>
+                        </div>
+                    </div>
                   </form>
             </div>           
           </div>
         </div>
-      </div>
+    </div>
+       <!-- Modal registrar -->
+    <div class="modal modal__registrar fade" id="modal__registrar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content  modal__login__content">            
+            <div class="modal-body modal__login__body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="static/img/iconos/close.svg" alt="">
+                  </button>                
+                <form class="row">
+                    <div class="form-group col-lg-12">
+                        <h3 class="titulo">Registrar</h3>
+                    </div>
+                    <div class="form-group col-lg-12">                      
+                      <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Usuario">                      
+                    </div>
+                    <div class="form-group col-lg-12">                      
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>  
+                    <div class="form-group pRight col-lg-6">                      
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group pLeft col-lg-6">                      
+                        <input type="password" class="form-control" placeholder="Very Password">
+                    </div>       
+                    <div class="form-group pRight col-lg-4">                      
+                        <select name="" class="form-control" id="">
+                            <option value="">Día</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                        </select>
+                    </div>
+                    <div class="form-group pLeft pRight col-lg-4">                      
+                        <select name="" class="form-control" id="">
+                            <option value="">Mes</option>
+                            <option value="">Enero</option>
+                            <option value="">Febrero</option>
+                            <option value="">Marzo</option>
+                            <option value="">Abril</option>
+                            <option value="">Mayo</option>
+                            <option value="">Junio</option>
+                        </select>
+                    </div> 
+                    <div class="form-group pLeft col-lg-4">                      
+                        <select name="" class="form-control" id="">
+                            <option value="">Año</option>
+                            <option value="">1995</option>
+                            <option value="">1996</option>
+                            <option value="">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                        </select>                        
+                    </div> 
+                    <div class="form-group col-lg-12">
+                        <div class="check">
+                            <input type="checkbox" name="category" id="c_2" class="css-checkbox" />
+                            <label for="c_2" class="css-label">* Terms and Conditions</label>
+                        </div>                        
+                    </div>                
+                    <div class="col-lg-7 pRight">
+                        <button type="submit" class="btn btn--color">Registrar</button>  
+                    </div>
+                    <div class="col-lg-5 pLeft">
+                        <button type="submit" class="btn btn--negro" data-dismiss="modal">Cerrar</button>  
+                    </div>    
+                  </form>
+            </div>           
+          </div>
+        </div>
+    </div>
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+    <script src="static/js/script.js"></script>
 </body>
 </html>
