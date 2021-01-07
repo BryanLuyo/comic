@@ -1,19 +1,18 @@
 $('.owl-nuevo').owlCarousel({
   loop:true,
-  margin:10,
+  margin:10, 
+  nav:false,
   responsiveClass:true,
   responsive:{
       0:{
-          items:2,
-          nav:true
+          items:2,          
       },
       600:{
-          items:3,
-          nav:false
+          items:4,   
+          dots:true       
       },
       1000:{
-          items:5,
-          nav:true,
+          items:5,          
           loop:false
       }
   }
