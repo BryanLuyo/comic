@@ -25,3 +25,23 @@ $('.burger, .overlay').click(function(){
   $('nav').toggleClass('show');
   $('body').toggleClass('overflow');
 });
+
+
+
+var $nav= $('header');
+var $navTop = $nav.offset().top;
+
+var pegarNav= function(){
+  var $scrollTop = $(window).scrollTop();
+  if($scrollTop >= $navTop){
+    $nav.addClass('fixed');   
+  }
+  else{
+    $nav.removeClass('fixed');      
+  }
+}
+
+
+$(window).on('scroll',pegarNav);
+
+
