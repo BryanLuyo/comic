@@ -499,7 +499,7 @@ body {
 .modal__login__content::before, .modal__login__content::after {
   position: absolute;
   content: "";
-  width: 9px;
+  width: 8px;
   height: 100%;
   background-image: url(../../static/img/iconos/raya-veticalN.svg);
   background-size: contain;
@@ -1642,11 +1642,14 @@ hr {
     padding: 42px 20px;
   }
   .modal__login__body::before, .modal__login__body::after {
-    height: 8px;
+    height: 7px;
     background-size: contain;
   }
   .modal__login__body h3 {
     font-size: 32px;
+  }
+  .modal__login__body form {
+    width: 70%;
   }
   .modal__login__body form input {
     height: 43px;
