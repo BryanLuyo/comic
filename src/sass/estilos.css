@@ -845,7 +845,7 @@ hr {
 
 .footer__bottom h6 {
   font-family: "Roboto", sans-serif;
-  font-size: 14px;
+  font-size: 13px;
   margin: 0;
   font-weight: 600;
 }
@@ -1122,15 +1122,19 @@ hr {
     border-color: #33333c;
     color: #fff;
     border-radius: 0;
-    border-left: 1px solid #757575;
   }
   .header__mobile .buscador .input-group input:focus {
     border: transparent;
+    -webkit-box-shadow: 1px 3px 4px transparent;
+            box-shadow: 1px 3px 4px transparent;
+  }
+  .header__mobile .buscador .input-group input:active {
+    -webkit-box-shadow: 1px 3px 4px transparent;
+            box-shadow: 1px 3px 4px transparent;
   }
   .header__mobile .buscador .input-group-text {
     background-color: #33333c;
     border-color: #33333c;
-    border-right: 1px solid #757575;
   }
   .header__mobile .buscador .input-group-text img {
     width: 20px;
@@ -1235,11 +1239,13 @@ hr {
   }
   .footer__top__link .links a {
     display: block;
-    font-size: 16px;
-    padding: 8px 0px;
+    padding: 5px 0px;
   }
   .footer__top__link .suscribete {
     width: 67%;
+  }
+  .footer__bottom {
+    padding: 15px;
   }
   .parrafo {
     font-size: 13px;
@@ -1372,10 +1378,10 @@ hr {
     width: 55%;
   }
   .footer__top {
-    padding: 50px 0px;
+    padding: 25px 0px;
   }
   .footer__top__logo img {
-    width: 176px;
+    width: 160px;
   }
   .footer__top__link a {
     font-size: 24px;
@@ -1388,9 +1394,6 @@ hr {
   .footer__top__link .suscribete {
     width: 75%;
     margin-top: 0;
-  }
-  .footer__bottom h6 {
-    font-size: 16px;
   }
   .opciones__card {
     padding: 30px 17px;
@@ -1478,8 +1481,24 @@ hr {
   .fixed .buscador {
     margin-top: 6px !important;
   }
+  .footer__top {
+    padding: 50px 0px;
+  }
+  .footer__top__logo img {
+    width: 176px;
+  }
+  .footer__top__link .links a {
+    font-size: 16px;
+    padding: 8px 0px;
+  }
   .footer__top__link .redes a img {
     width: 60px;
+  }
+  .footer__bottom {
+    padding: 20px;
+  }
+  .footer__bottom h6 {
+    font-size: 16px;
   }
   .btn {
     padding: 13px 50px;
@@ -1496,6 +1515,9 @@ hr {
     top: 53px;
     padding: 8px 18px;
   }
+  .nuevo__card__img {
+    height: 390px;
+  }
   .nuevo__card__botones a {
     margin: 0px 10px;
   }
@@ -1504,9 +1526,10 @@ hr {
   }
   .nuevo__card__botones a span {
     margin-left: 22px;
+    font-size: 15px;
   }
   .opciones__card {
-    padding: 30px 42px;
+    padding: 30px 58px;
   }
   .opciones__card img {
     width: 110px;
@@ -1551,9 +1574,6 @@ hr {
   .header__right .web img {
     width: 40px;
   }
-  .nuevo__card__img {
-    height: 352px;
-  }
   .banner {
     margin-top: 100px;
     height: 90vh;
@@ -1562,7 +1582,7 @@ hr {
     height: 80vh;
   }
   .banner__content__center {
-    width: 68%;
+    width: 61%;
   }
   .banner__content__center__descrip {
     padding: 50px 55px;
@@ -1602,12 +1622,15 @@ hr {
   .footer__top__logo img {
     width: 240px;
   }
+  .footer__top__link .redes li a img {
+    width: 60px;
+  }
   .footer__top__link a {
     font-size: 30px;
     padding: 6px 0px;
   }
   .container {
-    max-width: 1295px;
+    max-width: 1420px;
   }
   .modal-dialog {
     max-width: 700px;

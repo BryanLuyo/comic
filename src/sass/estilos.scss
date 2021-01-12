@@ -753,7 +753,7 @@ hr{
         text-align: center;
         h6{
             font-family: $roboto;            
-            font-size: 14px;
+            font-size: 13px;
             margin: 0;
             font-weight: 600;
         }
@@ -1048,16 +1048,18 @@ hr{
                         background-color: $negro;
                         border-color: $negro;
                         color: $blanco;
-                        border-radius: 0;
-                        border-left:1px solid #757575;
+                        border-radius: 0;                        
                         &:focus{
                             border:transparent;
+                            box-shadow: 1px 3px 4px transparent;
+                        }
+                        &:active{
+                            box-shadow: 1px 3px 4px transparent;
                         }
                     }
                     &-text{
                         background-color: $negro;
-                        border-color: $negro;
-                        border-right:1px solid #757575;
+                        border-color: $negro;                        
                         img{
                             width: 20px;
                         }
@@ -1197,15 +1199,17 @@ hr{
             &__link{
                 .links{
                     a{
-                        display: block;
-                        font-size: 16px;
-                        padding: 8px 0px;
+                        display: block;                        
+                        padding: 5px 0px;
                     }
                 }
                 .suscribete{
                     width: 67%;
                 }
             }
+        }
+        &__bottom{
+            padding: 15px;
         }
     }
 
@@ -1390,10 +1394,10 @@ hr{
 
     .footer{
        &__top{
-            padding: 50px 0px;
+            padding: 25px 0px;
            &__logo{
                img{
-                width: 176px;
+                width: 160px;
                }
            }
            &__link{
@@ -1416,12 +1420,7 @@ hr{
                 margin-top:0;
             }
            }
-       }
-       &__bottom{
-        h6{
-            font-size: 16px;
-        }
-       }
+       }      
     }
     .opciones{
         &__card{
@@ -1565,7 +1564,19 @@ hr{
 
     .footer{
         &__top{
+            padding: 50px 0px;
+            &__logo{
+                img{
+                 width: 176px;
+                }
+            }
             &__link{
+                .links{
+                    a{
+                        font-size: 16px;
+                        padding: 8px 0px;
+                    }
+                }
                 .redes{
                     a{
                         img{
@@ -1575,6 +1586,12 @@ hr{
                 }
             }
         }
+        &__bottom{
+            padding: 20px;
+            h6{
+                font-size: 16px;
+            }
+           }
     }
 
     .btn{
@@ -1595,6 +1612,9 @@ hr{
             }
         }
         &__card{
+            &__img{
+                height: 390px;
+            }
             &__botones{
                 a{
                     margin: 0px 10px;
@@ -1603,6 +1623,7 @@ hr{
                     }
                     span{
                         margin-left: 22px;
+                        font-size: 15px;
                     }
                 }
             }
@@ -1611,7 +1632,8 @@ hr{
 
     .opciones{
         &__card{
-            padding: 30px 42px;            
+            padding: 30px 58px; 
+                       
             img{
                 width: 110px; 
             }
@@ -1674,13 +1696,7 @@ hr{
             }
         }
     }
-    .nuevo{
-        &__card{
-            &__img{
-                height: 352px;
-            }
-        }
-    }
+  
    
     .banner{
         margin-top: 100px;
@@ -1688,7 +1704,7 @@ hr{
         &__content{
             height: 80vh;
             &__center{
-                width: 68%;
+                width: 61%;
                 &__descrip{
                     padding: 50px 55px;  
                     &:before{
@@ -1741,6 +1757,15 @@ hr{
                 }
             }
             &__link{
+                .redes{
+                    li{
+                        a{
+                            img{
+                                width: 60px;
+                            }
+                        }
+                    }
+                }
                 a{
                     font-size: 30px;
                     padding: 6px 0px;
@@ -1751,7 +1776,7 @@ hr{
     
     
     .container{
-        max-width: 1295px;
+        max-width: 1420px;
     }   
     .modal{
         &-dialog{
