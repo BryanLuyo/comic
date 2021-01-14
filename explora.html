@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/sass/estilos.css">
+    <link rel="stylesheet" href="static/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="static/css/owl.theme.default.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <meta name="theme-color" content="#33333c">
+    <title>Graphic Story</title>
+</head>
+<body>
+    <header class="header">       
+       <div class="container-fluid">
+           <div class="row">
+               <div class="col-lg-4">
+                    <div class="header__left">
+                        <div class="header__left__logo">
+                            <img src="static/img/logo.svg" alt="">
+                        </div>
+                        <div class="header__left__link">
+                            <ul>
+                                <li><a href="" data-toggle="modal" data-target="#modal__registrar">Registrarse</a></li>
+                                <li><a href="#" class="login" data-toggle="modal" data-target="#modal__login">Login</a></li>
+                            </ul>
+                        </div>
+                    </div>
+               </div>
+               <div class="col-lg-4">
+                    <form class="buscador">
+                        <div class="col-auto">                                        
+                            <div class="input-group mb-2">                                          
+                                <input type="text" class="form-control" placeholder="Buscar comics, animes, artistas, estudios">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <img src="static/img/iconos/lupa.svg" alt="">
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </form>                  
+               </div>
+               <div class="col-lg-4 d-flex align-items-center justify-content-end">
+                   <div class="header__right">
+                        <div class="header__right__link">
+                            <a href="index.htnl">home</a>
+                            <a href="explora.html"  class="activo">Explora</a>                            
+                            <a href="">Foro</a>
+                            <a href="">Lista</a>
+                        </div>                        
+                        <a href="" class="web"><img src="static/img/iconos/web.svg" alt=""></a>
+                   </div>                   
+               </div>
+           </div>
+       </div>
+    </header>
+    <!-- menu responsive -->
+    <div class="header__mobile">
+        <div class="header__mobile__logo">
+          <a class="navbar-brand" href="#"><img src="static/img/logo-blanco.svg" alt="" class="img-fluid"></a>
+        </div>
+        <div class="buscador">
+            <form>
+                <div class="">                                        
+                    <div class="input-group">                                          
+                        <input type="text" class="form-control" placeholder="Buscar comics, animes, artistas, estudios">
+                    <div class="input-group-prepend">
+                        <div class="input-group-text">
+                            <img src="static/img/iconos/lupa.svg" alt="">
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </form> 
+        </div>
+        <div class="burger">
+          <span></span>
+        </div>
+    </div>
+    <nav class="header__responsive">
+        <div class="usuario">
+            <div class="icono"><img src="static/img/iconos/user.png" alt=""></div>
+            <span>Visitante</span>
+        </div>        
+        <ul class="login">
+            <li><a href="" data-toggle="modal" data-target="#modal__login">Login</a></li>
+            <li><a href="" data-toggle="modal" data-target="#modal__registrar">Registrar</a></li>
+        </ul>
+        <ul class="main">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="explora.html">Explora</a></li>
+          <li><a href="">Foro</a></li>
+          <li><a href="">Listas</a></li>                    
+        </ul>        
+    </nav>
+
+    <div class="overlay"></div>
+
+   
+    <div class="footer__responsive d-block d-sm-none">
+        <ul>
+            <li><a href="">Home</a></li>
+            <li><a href="">Comics</a></li>
+            <li><a href="">Foro</a></li>
+            <li><a href="">Lista</a></li>
+        </ul>
+    </div>
+    <footer class="footer">
+        <div class="footer__top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer__top__logo">
+                            <img src="static/img/logo-blanco.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer__top__link">
+                            <a href="">Historia</a>
+                            <a href="">Nosotros</a>
+                            <a href="">Valores</a>
+                            <ul class="redes">
+                              <li><a href=""><img src="static/img/iconos/face.svg" alt=""> </a></li>
+                              <li><a href=""><img src="static/img/iconos/twitter.svg" alt=""> </a></li>  
+                              <li><a href=""><img src="static/img/iconos/instagram.svg" alt=""> </a></li>       
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer__top__link d-none d-sm-block">
+                            <a href="">Sitio web</a>
+                            <div class="links">
+                                <a href="">Home</a>
+                                <a href="">Explora</a>
+                                <a href="">Foro</a>
+                                <a href="">Lista</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6">
+                        <div class="footer__top__link">
+                            <a href="">Informes</a>
+                            <div class="links">
+                                <a href="">Contactos</a>
+                                <a href="">Comunidad</a>
+                                <a href="">Idiomas</a>                                
+                            </div>
+                            <div class="suscribete">
+                                <form>
+                                    <div class="">                                        
+                                        <div class="input-group mb-2">                                          
+                                          <input type="text" class="form-control" id="inlineFormInputGroup" placeholder="Suscribete">
+                                          <div class="input-group-prepend">
+                                            <div class="input-group-text">
+                                                <img src="static/img/iconos/envio.svg" alt="">
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <h6>Copyright 2021 Graphic Story. Derechos Reservados</h6>
+        </div>        
+    </footer>
+    <!-- Modal login -->
+    <div class="modal modal__login fade" id="modal__login" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content  modal__login__content">            
+            <div class="modal-body modal__login__body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="static/img/iconos/close.svg" alt="">
+                  </button>                
+                <form>
+                    <h3 class="titulo text-center">inicia sesión para ver más</h3>
+                    <div class="form-group">                      
+                      <input type="email" class="form-control" id="" aria-describedby="emailHelp" placeholder="Correo">                      
+                    </div>
+                    <div class="form-group">                      
+                      <input type="password" class="form-control" placeholder="contraseña">
+                    </div>  
+                    <div class="form-group">
+                      <div class="check">
+                        <input type="checkbox" name="category" id="c_1" class="css-checkbox" />
+                        <label for="c_1" class="css-label">¿Mantener siempre la sesión iniciada?</label>
+                      </div>                        
+                    </div>                  
+                    <button type="submit" class="btn btn--color">Iniciar Sesión</button>
+                    <div class="row mt-3 links">
+                        <div class="col-lg-6 col-sm-6 text-center p-0">
+                            <a href="">¿Olvidaste tu contraseña?</a>
+                        </div>
+                        <div class="col-lg-6 col-sm-6 text-center p-0">
+                            <a href="">¿Aún no estás? Regístrate</a>
+                        </div>
+                    </div>
+                  </form>
+            </div>           
+          </div>
+        </div>
+    </div>
+       <!-- Modal registrar -->
+    <div class="modal modal__registrar fade" id="modal__registrar" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog  modal-dialog-centered">
+          <div class="modal-content  modal__login__content">            
+            <div class="modal-body modal__login__body">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <img src="static/img/iconos/close.svg" alt="">
+                  </button>                
+                <form class="row">
+                    <div class="form-group col-lg-12">
+                        <h3 class="titulo">Registrar</h3>
+                    </div>
+                    <div class="form-group col-lg-12">                      
+                      <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Usuario">                      
+                    </div>
+                    <div class="form-group col-lg-12">                      
+                      <input type="email" class="form-control" placeholder="Email">
+                    </div>  
+                    <div class="form-group pRight col-lg-6">                      
+                        <input type="password" class="form-control" placeholder="Password">
+                    </div>
+                    <div class="form-group pLeft col-lg-6">                      
+                        <input type="password" class="form-control" placeholder="Very Password">
+                    </div>       
+                    <!-- <div class="form-group pRight col-lg-4">                      
+                        <select name="" class="form-control" id="">
+                            <option value="">Día</option>
+                            <option value="">01</option>
+                            <option value="">02</option>
+                            <option value="">03</option>
+                            <option value="">04</option>
+                            <option value="">05</option>
+                            <option value="">06</option>
+                        </select>
+                    </div>
+                    <div class="form-group pLeft pRight col-lg-4">                      
+                        <select name="" class="form-control" id="">
+                            <option value="">Mes</option>
+                            <option value="">Enero</option>
+                            <option value="">Febrero</option>
+                            <option value="">Marzo</option>
+                            <option value="">Abril</option>
+                            <option value="">Mayo</option>
+                            <option value="">Junio</option>
+                        </select>
+                    </div> 
+                    <div class="form-group pLeft col-lg-4">                      
+                        <select name="" class="form-control" id="">
+                            <option value="">Año</option>
+                            <option value="">1995</option>
+                            <option value="">1996</option>
+                            <option value="">1997</option>
+                            <option value="">1998</option>
+                            <option value="">1999</option>
+                            <option value="">2000</option>
+                        </select>                        
+                    </div> -->
+                    <div class="form-group col-lg-12">
+                        <div class="check">
+                            <input type="checkbox" name="category" id="c_2" class="css-checkbox" />
+                            <label for="c_2" class="css-label">* Terms and Conditions</label>
+                        </div>                        
+                    </div>                
+                    <div class="col-lg-7 col-sm-6 pRight">
+                        <button type="submit" class="btn btn--color">Registrar</button>  
+                    </div>
+                    <div class="col-lg-5 col-sm-6 pLeft">
+                        <button type="submit" class="btn btn--negro d-none d-sm-block" data-dismiss="modal">Cerrar</button>  
+                    </div>    
+                  </form>
+            </div>           
+          </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="static/js/bootstrap.min.js"></script>    
+    <script src="static/js/owl.carousel.min.js"></script> 
+    <script src="static/js/script.js"></script>
+</body>
+</html>

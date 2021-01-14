@@ -860,7 +860,7 @@ hr {
 
 .nuevo {
   background-image: url("../../static/img/puntos.svg");
-  background-size: cover;
+  background-size: 60%;
   padding: 40px 0px 40px;
 }
 
@@ -874,6 +874,7 @@ hr {
 
 .nuevo__row {
   display: none;
+  width: 100%;
 }
 
 .nuevo__top {
@@ -903,9 +904,16 @@ hr {
 }
 
 .nuevo__card {
-  background-color: #e5e5e5;
   padding-bottom: 0;
   border-radius: 8px;
+  width: 100%;
+  float: left;
+  background-color: #efefef;
+  margin-left: 20px;
+}
+
+.nuevo__card:first-child {
+  margin-left: 0;
 }
 
 .nuevo__card__img {
@@ -917,7 +925,7 @@ hr {
 
 .nuevo__card__botones {
   text-align: center;
-  padding: 10px 5px;
+  padding: 5px;
 }
 
 .nuevo__card__botones a {
@@ -945,7 +953,7 @@ hr {
 
 .sigue {
   background-image: url("../../static/img/puntos.svg");
-  background-size: cover;
+  background-size: 60%;
   padding: 30px 0px;
 }
 
@@ -1312,8 +1320,11 @@ hr {
   .nuevo__top .boton {
     top: 32px;
   }
+  .nuevo__card {
+    width: 20%;
+  }
   .nuevo__card__img {
-    height: 248px;
+    height: 260px;
   }
   .titulo--mediano {
     font-size: 41px;
@@ -1344,12 +1355,12 @@ hr {
     width: 63%;
   }
   .banner {
-    height: 74vh;
+    height: 72vh;
     padding: 0;
     margin-top: 77px;
   }
   .banner__content {
-    height: 74vh;
+    height: 72vh;
   }
   .banner__content__center {
     width: 60%;
@@ -1470,7 +1481,7 @@ hr {
     top: 44px;
   }
   .nuevo__card__img {
-    height: 303px;
+    height: 316px;
   }
 }
 
@@ -1506,6 +1517,7 @@ hr {
   }
   .nuevo {
     padding: 90px 0px 70px;
+    background-size: 60%;
   }
   .nuevo__top .raya {
     height: 2px;
@@ -1517,6 +1529,9 @@ hr {
   }
   .nuevo__card__img {
     height: 390px;
+  }
+  .nuevo__card__botones {
+    padding: 10px 5px;
   }
   .nuevo__card__botones a {
     margin: 0px 10px;
@@ -1545,7 +1560,7 @@ hr {
     font-size: 56.53px;
   }
   .header {
-    padding: 5px 40px;
+    padding: 5px 240px;
     height: 100px;
   }
   .header__left__link {
@@ -1576,10 +1591,10 @@ hr {
   }
   .banner {
     margin-top: 100px;
-    height: 90vh;
+    height: 70vh;
   }
   .banner__content {
-    height: 80vh;
+    height: 70vh;
   }
   .banner__content__center {
     width: 61%;
@@ -1629,6 +1644,9 @@ hr {
     font-size: 30px;
     padding: 6px 0px;
   }
+  .sigue {
+    background-size: 60%;
+  }
   .container {
     max-width: 1420px;
   }
@@ -1661,6 +1679,12 @@ hr {
   .modal__login__body form .check input[type=checkbox].css-checkbox + label.css-label {
     font-size: 18px;
     height: 24px;
+  }
+}
+
+@media (min-width: 2850px) {
+  .header {
+    padding: 5px 500px;
   }
 }
 /*# sourceMappingURL=estilos.css.map */

@@ -771,7 +771,7 @@ hr{
 
 .nuevo{
     background-image: url('../../static/img/puntos.svg');
-    background-size: cover;    
+    background-size: 60%;    
     padding: 40px 0px 40px;
     .owl-nuevo{
         .owl-dots{
@@ -787,6 +787,7 @@ hr{
     }
     &__row{
         display: none;
+        width: 100%;
     }
     &__top{
         position: relative;
@@ -811,10 +812,16 @@ hr{
             background-color:#d4d4d4;            
         }
     }
-    &__card{
-        background-color: $plomo;        
+    &__card{             
         padding-bottom: 0;
         border-radius: 8px;
+        width: 100%;
+        float: left;
+        background-color: #efefef;
+        margin-left: 20px;
+        &:first-child{
+            margin-left: 0;
+        }
         &__img{
             height: 258px;            
             width: 100%;
@@ -823,7 +830,7 @@ hr{
         }
         &__botones{
             text-align: center;
-            padding: 10px 5px;            
+            padding: 5px;                          
             a{
                 display: inline-block;
                 position: relative;                
@@ -850,7 +857,7 @@ hr{
 
 .sigue{
     background-image: url('../../static/img/puntos.svg');
-    background-size: cover;
+    background-size: 60%;
     padding: 30px 0px;
     &__responsive{
         width: 230px;        
@@ -1233,6 +1240,7 @@ hr{
             }
         }
         &__card{
+           
             &__img{
                 height: 253px;
             }
@@ -1302,8 +1310,9 @@ hr{
             }
         }
         &__card{
+            width: 20%;
             &__img{
-                height: 248px;
+                height: 260px;
             }
         }
     }
@@ -1350,11 +1359,11 @@ hr{
         
     }
     .banner{
-        height: 74vh;
+        height: 72vh;
         padding: 0;
         margin-top: 77px;
         &__content{
-            height: 74vh;
+            height: 72vh;
             &__center{
                 width: 60%;  
                 &__descrip{
@@ -1548,7 +1557,7 @@ hr{
         }
         &__card{ 
             &__img{
-                height: 303px;
+                height: 316px;
             }
         }
     }
@@ -1600,7 +1609,8 @@ hr{
     }
 
     .nuevo{
-        padding: 90px 0px 70px;
+        padding: 90px 0px 70px;  
+        background-size: 60%; 
         &__top{           
             .raya{
                 height: 2px;
@@ -1616,6 +1626,7 @@ hr{
                 height: 390px;
             }
             &__botones{
+                padding: 10px 5px;
                 a{
                     margin: 0px 10px;
                     img{
@@ -1653,7 +1664,8 @@ hr{
         }
     }
     .header{
-        padding: 5px 40px; 
+        //padding: 5px 40px; 
+        padding: 5px 240px;
         height: 100px;    
         &__left{
             &__link{
@@ -1700,9 +1712,9 @@ hr{
    
     .banner{
         margin-top: 100px;
-        height: 90vh;
+        height: 70vh;
         &__content{
-            height: 80vh;
+            height: 70vh;
             &__center{
                 width: 61%;
                 &__descrip{
@@ -1774,6 +1786,9 @@ hr{
         }
     }
     
+    .sigue{
+        background-size: 60%;
+    }
     
     .container{
         max-width: 1420px;
@@ -1820,5 +1835,11 @@ hr{
                 }
             }
         }
+    }
+}
+
+@media(min-width:2850px){
+    .header{
+        padding: 5px 500px;
     }
 }
