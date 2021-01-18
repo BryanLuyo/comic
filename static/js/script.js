@@ -1,3 +1,9 @@
+$(function(){
+      
+  alert('ancho - - ' + $(window).width() + ' - - alto - - ' + $(window).height() )
+
+})
+
 $('.owl-nuevo').owlCarousel({
   loop:true,
   margin:10, 
