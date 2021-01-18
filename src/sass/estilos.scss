@@ -1794,6 +1794,18 @@ hr{
     }
 }
 
+
+@media(min-width:1500px){
+
+.banner{
+    height: 490px;
+    &__content{
+        height: 490px;
+    }
+}
+ 
+}
+
 @media(min-width:1600px){
     .fixed .header__left__logo img {
         width: 65px !important;
