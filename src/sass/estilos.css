@@ -1718,10 +1718,40 @@ hr {
 
 @media (min-width: 1500px) {
   .banner {
-    height: 490px;
+    height: 650px;
   }
   .banner__content {
-    height: 490px;
+    height: 650px;
+  }
+  .header {
+    padding: 5px 22px;
+    height: 100px;
+  }
+  .header__left__link {
+    left: 110px;
+  }
+  .header__left__link ul li a {
+    font-size: 16px;
+  }
+  .header__left__logo img {
+    width: 100px;
+  }
+  .header .input-group input {
+    font-size: 16px;
+  }
+  .header .buscador {
+    width: 70%;
+    margin-top: 25px;
+  }
+  .header__right__link a {
+    font-size: 16px;
+    padding: 0px 15px;
+  }
+  .header__right .web {
+    margin-left: 30px;
+  }
+  .header__right .web img {
+    width: 40px;
   }
 }
 
@@ -1801,36 +1831,6 @@ hr {
   }
   .titulo--mediano {
     font-size: 56.53px;
-  }
-  .header {
-    padding: 5px 240px;
-    height: 100px;
-  }
-  .header__left__link {
-    left: 110px;
-  }
-  .header__left__link ul li a {
-    font-size: 16px;
-  }
-  .header__left__logo img {
-    width: 100px;
-  }
-  .header .input-group input {
-    font-size: 16px;
-  }
-  .header .buscador {
-    width: 70%;
-    margin-top: 25px;
-  }
-  .header__right__link a {
-    font-size: 16px;
-    padding: 0px 15px;
-  }
-  .header__right .web {
-    margin-left: 30px;
-  }
-  .header__right .web img {
-    width: 40px;
   }
   .banner {
     margin-top: 100px;
