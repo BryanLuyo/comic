@@ -56,12 +56,37 @@ body {
 }
 
 .m-top {
-  margin-top: 78px;
+  margin-top: 68px;
 }
 
 .puntos {
   background-image: url("../../static/img/puntos.svg");
   background-size: 250%;
+}
+
+.listado {
+  padding: 0;
+  display: inline-block;
+}
+
+.listado li {
+  display: inline-block;
+  padding: 0px 5px;
+}
+
+.listado li a {
+  color: #33333c;
+  line-height: 24px;
+  display: block;
+  border-radius: 50%;
+  font-family: "Signika", sans-serif;
+  font-weight: 500;
+}
+
+.listado li a.activo {
+  width: 25px;
+  height: 25px;
+  background-color: #fbb71c;
 }
 
 .banner {
@@ -1029,6 +1054,26 @@ hr {
   padding-top: 15px;
 }
 
+.tab-content .paginacion {
+  margin: 20px 0px;
+}
+
+.tab-content .paginacion .flecha {
+  display: inline-block;
+}
+
+.tab-content .paginacion .flecha button {
+  color: #fbb71c;
+  background-color: #fff;
+  border: 1px solid transparent;
+  font-size: 20px;
+  font-family: "Signika", sans-serif;
+}
+
+.tab-content .paginacion .flecha button:active, .tab-content .paginacion .flecha button:focus {
+  outline: none;
+}
+
 .comic {
   width: 100%;
   margin-bottom: 22px;
@@ -1379,7 +1424,7 @@ hr {
 }
 
 .tabla .table {
-  margin-bottom: 40px;
+  margin-bottom: 10px;
 }
 
 .tabla .table thead th {
@@ -1874,6 +1919,9 @@ hr {
 }
 
 @media (min-width: 992px) {
+  .m-top {
+    margin-top: 78px;
+  }
   .busquedaAvanzada .fecha {
     text-align: right;
   }

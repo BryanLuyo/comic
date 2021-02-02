@@ -59,7 +59,7 @@ body{
 }
  
 .m-top{    
-    margin-top: 78px;
+    margin-top: 68px;
 }
 
 
@@ -69,6 +69,27 @@ body{
     background-size: 250%;  
 }
 
+.listado{
+    padding: 0;
+    display: inline-block;
+    li{
+        display: inline-block;
+        padding: 0px 5px;
+        a{
+            color: $negro;
+            line-height: 24px;
+            display: block;
+            border-radius: 50%;
+            font-family: $signika;
+            font-weight: 500;
+            &.activo{
+                width: 25px;
+                height: 25px;
+                background-color: $amarillo;
+            }
+        }
+    }
+}
 
 .banner{
     background-image: url(../../static/img/banner.svg);
@@ -940,7 +961,24 @@ hr{
 ===============================*/
 .tab-content{
     padding-top: 15px;
-}
+    .paginacion{
+        margin: 20px 0px;
+        .flecha{    
+            display: inline-block;    
+            button{
+                color: $amarillo;
+                background-color: $blanco;
+                border:1px solid transparent;
+                font-size: 20px;
+                font-family: $signika;
+                &:active,
+                &:focus{
+                    outline: none;
+                }
+            }
+        }
+    }
+} 
 .comic{
     width: 100%;   
     margin-bottom: 22px;
@@ -1256,7 +1294,7 @@ hr{
 .tabla{
     overflow: scroll;
     .table{
-        margin-bottom: 40px;
+        margin-bottom: 10px;
         thead{
             th{
                 border-top:1px solid transparent !important;
@@ -1842,6 +1880,10 @@ hr{
 }
 @media(min-width:992px){   
 
+    .m-top{
+        margin-top: 78px;
+    } 
+ 
     .busquedaAvanzada{
         .fecha{
             text-align: right;
